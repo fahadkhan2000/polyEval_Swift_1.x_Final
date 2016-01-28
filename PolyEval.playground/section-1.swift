@@ -181,7 +181,7 @@ class polyEval
     class func calculateFinalResult(monomials: [String] , powers: [Double] , val: Double)
     {
         var coeffsArray = extractCoeffs(monomials)
-        runAlgorithm(coeffsArray , powers: powers , val: val)
+        runPolyEvalAlgorithm(coeffsArray , powers: powers , val: val)
     }
     
     class func extractCoeffs(sortedTerms: [String]) -> [Double]
@@ -222,7 +222,7 @@ class polyEval
         return Coeffs
     }
     
-    class func runAlgorithm(coeffsArray: [Double] , powers: [Double], val:Double)
+    class func runPolyEvalAlgorithm(coeffsArray: [Double] , powers: [Double], val:Double)
     {
         var res: Double = 0.0
         
